@@ -17,7 +17,9 @@ object RetrofitClient {
      * Ex) Terminal: uvicorn Main:app --host host번호 --port port번호
      * 그 후 하단 BASE_URL 상수에 있는 번호에 맞춰서 변경 후 꼭 포트번호 뒤에 "/"로 닫아주세요.
      * **/
-    private val BASE_URL: String = "http://10.220.240.223:8000/"
+//    private val BASE_URL: String = "http://10.220.240.223:8000/"
+    private val BASE_URL: String = "http://192.168.182.19:8000/"
+
 
     val getUserAPI = Retrofit.Builder()
             .baseUrl(BASE_URL)

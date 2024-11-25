@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/facilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="@font/modufont"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:text="야옹아 멍멍해봐"
+                android:paddingVertical="5dp"
+                />
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="@font/modufont"
+                android:textColor="@color/main_color2"
+                android:textFontWeight="600"
+                android:text="애완동물 용품점"
+                android:paddingVertical="2dp"/>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:fontFamily="@font/modufont"
+                android:textColor="@color/dark_gray"
+                android:textFontWeight="200"
+                android:text="경기도 수원시 권선구 구운동 542-5"
+                android:paddingVertical="2dp"/>
+
+                <TextView
+                    android:id="@+id/operate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/modufont"
+                    android:textColor="@color/dark_gray"
+                    android:textFontWeight="200"
+                    android:text="운영 정보: 월~금 09:00~18:00"
+                    android:paddingVertical="2dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:id="@+id/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/modufont"
+                    android:textColor="@color/dark_gray"
+                    android:textFontWeight="200"
+                    android:text="연락처: 031-0000-0000"
+                    android:paddingVertical="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="4"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/preview"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+</LinearLayout>

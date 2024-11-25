@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemLayout">
+        <attr name="facilities" format="string|reference"/>
+        <attr name="category" format="string|reference"/>
+        <attr name="location" format="string|reference"/>
+        <attr name="operate" format="string|reference"/>
+        <attr name="call" format="string|reference"/>
+        <attr name="preview" format="string"/>
+    </declare-styleable>
+</resources>

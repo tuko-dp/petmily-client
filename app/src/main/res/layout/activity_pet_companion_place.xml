@@ -1,16 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="10dp"
+    android:background="@drawable/wave_haikei"
+    android:fillViewport="true"
     tools:context=".PetCompanionPlace">
 
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="동물 동반 장소"/>
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@drawable/list_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="5dp"
+                android:layout_height="130dp">
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:defaultQueryHint="장소나 주소를 입력하세요."/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="10dp">
+                    <TextView
+                        android:id="@+id/key_cafe"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/keytalk_layout"
+                        android:fontFamily="@font/modufont"
+                        android:textFontWeight="600"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color2"
+                        android:text="카페"/>
+                    <TextView
+                        android:id="@+id/key_drug"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/keytalk_layout"
+                        android:fontFamily="@font/modufont"
+                        android:textFontWeight="600"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color2"
+                        android:text="약국"/>
+                    <TextView
+                        android:id="@+id/key_hospital"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/keytalk_layout"
+                        android:fontFamily="@font/modufont"
+                        android:textFontWeight="600"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color2"
+                        android:text="병원"/>
+                    <TextView
+                        android:id="@+id/key_beauty"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/keytalk_layout"
+                        android:fontFamily="@font/modufont"
+                        android:textFontWeight="600"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color2"
+                        android:text="미용샵"/>
+                    <TextView
+                        android:id="@+id/key_art"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/keytalk_layout"
+                        android:fontFamily="@font/modufont"
+                        android:textFontWeight="600"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color2"
+                        android:text="미술관"/>
+                    <TextView
+                        android:id="@+id/key_shop"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/keytalk_layout"
+                        android:fontFamily="@font/modufont"
+                        android:textFontWeight="600"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color2"
+                        android:text="동물용품"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginTop="5dp"
+                android:id="@+id/shop_list"
+                android:background="@drawable/list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+</ScrollView>
